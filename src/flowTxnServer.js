@@ -7,7 +7,7 @@ fcl.config({
   "accessNode.api": "https://special-quick-seed.flow-testnet.discover.quiknode.pro/2ddfca1da0a21aa93393838ad401b1de040cf5bd/",
 });
 
-const token = '6262708175:AAHSJMrgD579DH3IbhYsg2HvO-UlG3Gq8-c';
+const token = process.env.TELEGRAM_BOT_TOKEN;
 
 const bot = new TelegramBot(token, {
   polling: true
